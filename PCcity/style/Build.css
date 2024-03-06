@@ -1,0 +1,44 @@
+* {
+	font-family:Arial;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.Sign_in {
+	text-align: center;
+	padding: inherit;
+	margin-left: 400px;
+	margin-right: 420px;
+	background-image: url("../image/Sign.gif");
+	color: white;
+	display: none;
+}
+
+img {
+	padding: 5px;
+	height: 150px;
+	width: 150px;
+}
+
+li {
+	display: inline;
+	margin-right: 10px;
+}
+
+/*body {
+	background-image: url("../image/background2.gif");
+	background-size: 100%;
+}*/
+
+.product {
+}
+
+table {
+	border: 1px solid #665544;
+}
+
+td {
+	border: 1px solid #665544;
+}
