@@ -1,0 +1,29 @@
+* {
+	border-radius: 20px; /* круглить углы блока */
+}
+.top {
+	position: static; /* Обьект статичен и не может быть перемещен */
+	top: 0; /* определяет вертикальную позицию */
+}
+li {
+	display: inline; /* Элементы располагаются на той же строке */
+	margin-right: 10px; /* внешний отступ справа от элемента */
+}
+table {
+	border: 1px solid #665544; /*  */
+}
+td {
+	border: 1px solid #665544; /*  */
+	padding: 10px; /*  */
+}
+.home_image {
+	width: 10%; /*  */
+	height: 10%; /*  */
+}
+.top_str, .down_str {
+    float: left; /* Обтекание справа */ 
+    width: 50%; /* Ширина текстового блока */ 
+}
+.down_str {
+    text-align: right; /* Выравнивание по правому краю */ 
+}
