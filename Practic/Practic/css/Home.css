@@ -1,9 +1,9 @@
 * {
 	border-radius: 20px; /* скругление углов блока */
-	font-family: 'Google Sans';
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	font-family: 'Google Sans'; /* Шрифт */
+	font-style: normal; /* стилизация шрифта */
+	text-transform: uppercase; /* трансформация букв в тексте */
+	letter-spacing: 0.05em; /*межбуквенное расстояние в тексте*/
 }
 .top {
 	position: static; /* Обьект статичен и не может быть перемещен */
@@ -27,12 +27,12 @@ td {
     text-align: right; /* Выравнивание по правому краю */ 
 }
 .text_one {
-	position: relative;
-	bottom: 30px;
+	position: relative; /**/
+	bottom: 30px; /* отступ снизу */
 }
 .text_two {
-	position: relative;
-	right: 180px;
+	position: relative; /**/
+	right: 180px; /* отступ справа */
 }
 /* Оформление панели */
 #side-checkbox {
@@ -44,99 +44,98 @@ td {
     top: 0; /* определяет вертикальную позицию */
     left: -360px; /* Отступ с левой стороны */
     background: #337AB7; /* задний фон */
-    transition: all 0.5s; /**/
-    width: 320px;
-    height: 100vh;
-    box-shadow: 10px 0 20px rgba(0,0,0,0.4);
-    color: #FFF;
-    padding: 40px 20px;
+    transition: all 0.5s; /* переходное состояние между двумя состояниями элемента */
+    width: 320px; /* ширина */
+    height: 100vh; /* высота */
+    color: #FFF; /* цвет */
+    padding: 40px 20px; /* внутренние отступы/поля */
 }
 .side-title {
-    font-size: 20px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #BFE2FF;
+    font-size: 20px; /* размер шрифта */
+    padding-bottom: 10px; /* внутренний отступ снизу */
+    margin-bottom: 20px; /* внешний отступ снизу */
+    border-bottom: 2px solid #BFE2FF; /* отступ краев внизу*/
 }
 /* Оформление кнопки на странице */
 .side-button-1-wr {
     text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
 }
 .side-button-1 {
-    display: inline-block;
+    display: inline-block; /* отображение на одной строке блочно */
 }
 .side-button-1 .side-b {
-    margin: 10px;
-    text-decoration: none;
-    position: relative;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 12px 30px;
-    color: #FFF;
-    font-weight: bold;
-    text-transform: uppercase; 
-    font-family: 'Roboto', Тahoma, sans-serif;
-    background: #337AB7;
-    cursor: pointer; 
-    border: 2px solid #BFE2FF;
+    margin: 10px; /* внещний отступ */
+    text-decoration: none; /* декорации к тексту*/
+    position: relative; /**/
+    font-size: 20px; /* размер шрифта */
+    line-height: 20px; /* величина пространства между строками */
+    padding: 12px 30px; /* внутренний отступ */
+    color: #FFF; /* цвет */
+    font-weight: bold; /* устанавливает начертание шрифта */
+    text-transform: uppercase;  /* трансформация букв в тексте*/
+    font-family: 'Roboto', Тahoma, sans-serif; /* шрифт */
+    background: #337AB7; /* задний фон */
+    cursor: pointer;  /* при наведении */
+    border: 2px solid #BFE2FF; /* краи бордика */
 }
-.side-button-1 .side-b:hover,
-.side-button-1 .side-b:active,
-.side-button-1 .side-b:focus {
-    color: #FFF;
+.side-button-1 .side-b:hover, /**/
+.side-button-1 .side-b:active, /**/
+.side-button-1 .side-b:focus /**/ {
+    color: #FFF; /* цвет */
 }
-.side-button-1 .side-b:after,
-.side-button-1 .side-b:before {
-    position: absolute;
-    height: 4px;
-    left: 50%;
-    bottom: -6px;
-    content: "";
-    transition: all 280ms ease-in-out;
-    width: 0;
+.side-button-1 .side-b:after, /**/
+.side-button-1 .side-b:before /**/ {
+    position: absolute; /**/
+    height: 4px; /* высота */
+    left: 50%; /* отступ слева */
+    bottom: -6px; /* отступ снизу */
+    content: ""; /* заменяет элемент сгенерированным значением */
+    transition: all 280ms ease-in-out; /* переходное состояние между двумя состояниями элемента */
+    width: 0; /* ширина */
 }
-.side-button-1 .side-open:after,
-.side-button-1 .side-open:before {
-    background: green;
+.side-button-1 .side-open:after, /**/
+.side-button-1 .side-open:before /**/ {
+    background: green; /* задний фон */
 }
-.side-button-1 .side-close:after,
-.side-button-1 .side-close:before {
-    background: red;
+.side-button-1 .side-close:after, /**/
+.side-button-1 .side-close:before /**/ {
+    background: red; /* задний фон */
 }
-.side-button-1 .side-b:before {
-    top: -6px;
+.side-button-1 .side-b:before /**/ {
+    top: -6px; /* отступ сверху*/
 }
-.side-button-1 .side-b:hover:after,
-.side-button-1 .side-b:hover:before {
-    width: 100%;
-    left: 0;
+.side-button-1 .side-b:hover:after, /**/
+.side-button-1 .side-b:hover:before /**/ {
+    width: 100%; /* ширина */
+    left: 0; /* отступ слева*/
 }
 /* Переключатели кнопки 1 */
 .side-button-1 .side-close {
-    display: none;
+    display: none; /* отображение объекта(не отображается) */
 }
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
-    display: none;
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open  /**/{
+    display: none; /* отображение объекта(не отображается) */
 }
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
-    display: block;
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close  /**/{
+    display: block; /**/
 }
-#side-checkbox:checked + .side-panel {
-    left: 0;
+#side-checkbox:checked + .side-panel  /**/{
+    left: 0; /* отступ слева */
 }
 /* Оформление кнопки на панеле */
 .side-button-2 {
-    font-size: 30px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-    transform: rotate(45deg);
-    color: #BFE2FF;    
-    transition: all 280ms ease-in-out;    
+    font-size: 30px; /* размер шрифта */
+    border-radius: 20px; /* радиус бортика*/
+    position: absolute; /**/
+    z-index: 1; /* Позиционирование по оси z(объект поверх других объектов или нет) */
+    top: 8px; /* отступ сверху */
+    right: 8px; /* отсутп справа*/
+    cursor: pointer; /* */
+    transform: rotate(45deg); /* переходное состояние между двумя состояниями элемента */
+    color: #BFE2FF; /* цвет */
+    transition: all 280ms ease-in-out; /* переходное состояние между двумя состояниями элемента */
 }
-.side-button-2:hover {
-    transform: rotate(45deg) scale(1.1);    
-    color: #FFF;
+.side-button-2:hover /**/{
+    transform: rotate(45deg) scale(1.1); /* переходное состояние между двумя состояниями элемента */   
+    color: #FFF; /* цвет */
 }
