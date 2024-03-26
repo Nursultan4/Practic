@@ -33,6 +33,7 @@ td {
 .text_two {
 	position: relative; /**/
 	right: 180px; /* отступ справа */
+	color: gray;
 }
 /* Оформление панели */
 #side-checkbox {
@@ -43,7 +44,7 @@ td {
     z-index: 999999; /* Позиционирование по оси z(объект поверх других объектов или нет) */
     top: 0; /* определяет вертикальную позицию */
     left: -360px; /* Отступ с левой стороны */
-    background: #337AB7; /* задний фон */
+    background: gray; /* задний фон */
     transition: all 0.5s; /* переходное состояние между двумя состояниями элемента */
     width: 320px; /* ширина */
     height: 100vh; /* высота */
@@ -113,10 +114,10 @@ td {
 .side-button-1 .side-close {
     display: none; /* отображение объекта(не отображается) */
 }
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open  /**/{
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open{
     display: none; /* отображение объекта(не отображается) */
 }
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close  /**/{
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close{
     display: block; /**/
 }
 #side-checkbox:checked + .side-panel  /**/{
@@ -138,4 +139,11 @@ td {
 .side-button-2:hover /**/{
     transform: rotate(45deg) scale(1.1); /* переходное состояние между двумя состояниями элемента */   
     color: #FFF; /* цвет */
+}
+.menu_2 {
+	display: inline; /* Элементы располагаются на той же строке */
+	left: 10px;
+}
+body {
+	background: white;
 }
