@@ -1,9 +1,11 @@
 * {
-	border-radius: 20px; /* скругление углов блока */
-	font-family: 'Google Sans'; /* Шрифт */
+	font-family: 'trebuchet ms'; /* Шрифт */
 	font-style: normal; /* стилизация шрифта */
 	text-transform: uppercase; /* трансформация букв в тексте */
 	letter-spacing: 0.05em; /*межбуквенное расстояние в тексте*/
+}
+.font{
+	font-family: 'trebuchet ms';
 }
 .top {
 	position: static; /* Обьект статичен и не может быть перемещен */
@@ -15,10 +17,15 @@ li {
 }
 table {
 	border: 1px solid #665544; /* свойства границ */
+	border-radius: 20px /* скругление углов блока */
 }
 td {
 	border: 1px solid #665544; /* свойства границ */
 	padding: 10px; /* внутренние отступы/поля */
+	border-radius: 20px /* скругление углов блока */
+}
+.image{
+	border-radius: 20px; /* скругление углов блока */
 }
 .home_image {
 	margin-right: 35%; /* внешний отступ справа от элемента */
