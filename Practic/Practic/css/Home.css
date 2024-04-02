@@ -4,16 +4,12 @@
 	text-transform: uppercase; /* трансформация букв в тексте */
 	letter-spacing: 0.05em; /*межбуквенное расстояние в тексте*/
 }
-.font{
-	font-family: 'trebuchet ms';
+.top_line {
+	display: inline;
 }
 .top {
 	position: static; /* Обьект статичен и не может быть перемещен */
 	top: 0; /* определяет вертикальную позицию */
-}
-li {
-	display: inline; /* Элементы располагаются на той же строке */
-	margin-right: 1%; /* внешний отступ справа от элемента */
 }
 table {
 	border: 1px solid #665544; /* свойства границ */
@@ -29,6 +25,7 @@ td {
 }
 .home_image {
 	margin-right: 35%; /* внешний отступ справа от элемента */
+	display: inline;
 }
 .down_str {
     text-align: right; /* Выравнивание по правому краю */ 
@@ -39,7 +36,7 @@ td {
 }
 .text_two {
 	position: relative; /**/
-	right: 180px; /* отступ справа */
+	right: 150px; /* отступ справа */
 	color: gray;
 }
 /* Оформление панели */
