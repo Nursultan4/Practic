@@ -52,14 +52,9 @@ td {
     transition: all 0.5s; /* переходное состояние между двумя состояниями элемента */
     width: 320px; /* ширина */
     height: 100vh; /* высота */
-    color: #FFF; /* цвет */
     padding: 40px 20px; /* внутренние отступы/поля */
 }
 .side-title {
-    font-size: 20px; /* размер шрифта */
-    padding-bottom: 10px; /* внутренний отступ снизу */
-    margin-bottom: 20px; /* внешний отступ снизу */
-    border-bottom: 2px solid #BFE2FF; /* отступ краев внизу*/
 }
 /* Оформление кнопки на странице */
 .side-button-1-wr {
@@ -69,34 +64,12 @@ td {
     display: inline-block; /* отображение на одной строке блочно */
 }
 .side-button-1 .side-b {
-    margin: 10px; /* внещний отступ */
     text-decoration: none; /* декорации к тексту*/
     position: relative; /**/
-    font-size: 20px; /* размер шрифта */
-    line-height: 20px; /* величина пространства между строками */
-    padding: 12px 30px; /* внутренний отступ */
-    color: #FFF; /* цвет */
-    font-weight: bold; /* устанавливает начертание шрифта */
-    text-transform: uppercase;  /* трансформация букв в тексте*/
-    font-family: 'Roboto', Тahoma, sans-serif; /* шрифт */
-    background: #337AB7; /* задний фон */
-    cursor: pointer;  /* при наведении */
-    border: 2px solid #BFE2FF; /* краи бордика */
-}
-.side-button-1 .side-b:hover, /**/
-.side-button-1 .side-b:active, /**/
-.side-button-1 .side-b:focus /**/ {
-    color: #FFF; /* цвет */
 }
 .side-button-1 .side-b:after, /**/
 .side-button-1 .side-b:before /**/ {
     position: absolute; /**/
-    height: 4px; /* высота */
-    left: 50%; /* отступ слева */
-    bottom: -6px; /* отступ снизу */
-    content: ""; /* заменяет элемент сгенерированным значением */
-    transition: all 280ms ease-in-out; /* переходное состояние между двумя состояниями элемента */
-    width: 0; /* ширина */
 }
 .side-button-1 .side-open:after, /**/
 .side-button-1 .side-open:before /**/ {
@@ -135,16 +108,31 @@ td {
     z-index: 1; /* Позиционирование по оси z(объект поверх других объектов или нет) */
     top: 8px; /* отступ сверху */
     right: 8px; /* отсутп справа*/
-    cursor: pointer; /* */
     transform: rotate(45deg); /* переходное состояние между двумя состояниями элемента */
-    color: #BFE2FF; /* цвет */
     transition: all 280ms ease-in-out; /* переходное состояние между двумя состояниями элемента */
 }
 .side-button-2:hover /**/{
     transform: rotate(45deg) scale(1.1); /* переходное состояние между двумя состояниями элемента */   
-    color: #FFF; /* цвет */
 }
 .menu_2 {
 	display: inline; /* Элементы располагаются на той же строке */
 	left: 10px;
+}
+.sidenav {
+	display: ;
+	height: 100%;
+	width: 5%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+.main {
+  	margin-left: 5%; /* Совпадает с шириной боковой навигации */
+}
+@media screen and (max-height: 450px) {
+  	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 18px;}
 }
