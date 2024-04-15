@@ -137,5 +137,5 @@ td {
   	.sidenav a {font-size: 18px;}
 }
 .sidenav svg {
-	align-items: center;
+	left: 50%;
 }
