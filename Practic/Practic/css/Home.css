@@ -7,9 +7,14 @@
 .top_line {
 	display: inline;
 }
+.green {
+	background-color: rgb(190, 217, 186);
+}
+.pink {
+	background-color: rgb(235, 206, 218);
+}
 .top {
 	position: static; /* Обьект статичен и не может быть перемещен */
-	top: 0; /* определяет вертикальную позицию */
 }
 table {
 	border: 1px solid #665544; /* свойства границ */
@@ -48,7 +53,7 @@ td {
     z-index: 1; /* Позиционирование по оси z(объект поверх других объектов или нет) */
     top: 0; /* определяет вертикальную позицию */
     left: -360px; /* Отступ с левой стороны */
-    background: gray; /* задний фон */
+    background: rgb(245, 235, 239); /* задний фон */
     transition: all 0.5s; /* переходное состояние между двумя состояниями элемента */
     width: 320px; /* ширина */
     height: 100vh; /* высота */
@@ -70,14 +75,6 @@ td {
 .side-button-1 .side-b:after, /**/
 .side-button-1 .side-b:before /**/ {
     position: absolute; /**/
-}
-.side-button-1 .side-open:after, /**/
-.side-button-1 .side-open:before /**/ {
-    background: green; /* задний фон */
-}
-.side-button-1 .side-close:after, /**/
-.side-button-1 .side-close:before /**/ {
-    background: red; /* задний фон */
 }
 .side-button-1 .side-b:before /**/ {
     top: -6px; /* отступ сверху*/
