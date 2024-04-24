@@ -128,3 +128,6 @@ td {
 .main {
   	margin-left: 5%; /* Совпадает с шириной боковой навигации */
 }
+.main:has(.sidenav:display:;) {
+	margin-left: 15%;
+}
