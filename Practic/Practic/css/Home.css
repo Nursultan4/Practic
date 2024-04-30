@@ -63,9 +63,11 @@ td {
 /* Оформление кнопки на странице */
 .side-button-1-wr {
     text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+    overflow: hidden;
 }
 .side-button-1 {
     display: inline-block; /* отображение на одной строке блочно */
+    overflow: hidden;
 }
 .side-button-1 .side-b {
     text-decoration: none; /* декорации к тексту*/
